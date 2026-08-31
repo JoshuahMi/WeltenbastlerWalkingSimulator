@@ -23,12 +23,16 @@ func initiate_main_menu():
 	
 	# First, destroy all children of the main node
 	
-	var game_world = get_children()
-	
-	for node in game_world:
-		node.queue_free()
+	wipe_tree()
 		
 	# then instantiate the main menu scene
+	
+	if is_instance_valid(main_menu_scene):
+		
+		var main_menu = main_menu_scene.instantiate()
+		
+		add_child(main_menu)
+		
 	
 	pass
 
@@ -37,4 +41,30 @@ func initiate_main_menu():
 ## which will instantiate the starting level and spawn the player.
 func initiate_game():
 	
+	wipe_tree()
+	
+	if is_instance_valid(game_scene):
+		
+		var game = game_scene.instantiate()
+		
+		add_child(game)
+		
+	
+	
+	
+	
+	
+	
+	
+	
 	pass
+
+## Destroys all children of the main node
+func wipe_tree():
+	
+	# destroy all children of the main node
+	
+	var world = get_children()
+	
+	for node in world:
+		node.queue_free()
