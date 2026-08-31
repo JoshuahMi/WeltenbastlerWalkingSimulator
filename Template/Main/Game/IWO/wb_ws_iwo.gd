@@ -5,7 +5,7 @@ class_name WbWsIwo extends Node3D
 ## HUD can display in the Info Box, optional interactability
 
 ## The information about this IWO, to be displayed by the HUD in the info box.
-@export var info: String
+@export var info: WbText
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
