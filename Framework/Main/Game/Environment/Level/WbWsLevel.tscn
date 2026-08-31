@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://cnpd6cjl2hrh1"]
-
-[ext_resource type="Script" uid="uid://bppu1gw6eq55r" path="res://Framework/Main/Game/Environment/Level/wb_ws_level.gd" id="1_ixpbl"]
-
-[node name="WbWsLevel" type="Node3D" unique_id=1333287655 groups=["Level"]]
-script = ExtResource("1_ixpbl")

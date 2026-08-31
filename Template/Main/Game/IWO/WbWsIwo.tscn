@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bldhoxfeghlvp"]
+
+[ext_resource type="Script" uid="uid://cfxiarrbxj27w" path="res://Template/Main/Game/IWO/wb_ws_iwo.gd" id="1_y85ow"]
+
+[node name="WbWsIwo" type="Node3D" unique_id=506258572]
+script = ExtResource("1_y85ow")

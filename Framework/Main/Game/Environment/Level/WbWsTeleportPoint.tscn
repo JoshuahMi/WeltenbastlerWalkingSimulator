@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://dfp1goimt56lv"]
-
-[ext_resource type="Script" uid="uid://o52f8pc0t31w" path="res://Framework/Main/Game/Environment/Level/wb_ws_teleport_point.gd" id="1_oxj5o"]
-
-[node name="WbWsTeleportPoint" type="Node3D" unique_id=610585597 groups=["TeleportPoint"]]
-script = ExtResource("1_oxj5o")
