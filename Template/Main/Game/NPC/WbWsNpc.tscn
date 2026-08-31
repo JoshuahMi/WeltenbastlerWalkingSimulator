@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://te8qgglacso6"]
 
-[ext_resource type="Script" uid="uid://8snusj0n7hop" path="res://Template/Main/Game/NPC/wb_ws_npc.gd" id="1_mcwo0"]
+[ext_resource type="Script" uid="uid://8snusj0n7hop" path="res://Template/Main/Game/NPC/wb_ws_npc.gd" id="1_kgbw7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_reusg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_reusg"]
 
 [node name="WbWsNpc" type="CharacterBody3D" unique_id=1055224479]
-script = ExtResource("1_mcwo0")
+script = ExtResource("1_kgbw7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=376804455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c70spfe6h0nb7"]
 
-[ext_resource type="Script" uid="uid://dbeyvfmhskutc" path="res://Template/Main/wb_ws_main.gd" id="1_lrl20"]
+[ext_resource type="Script" uid="uid://dbeyvfmhskutc" path="res://Template/Main/wb_ws_main.gd" id="1_3cxpi"]
 
-[node name="WbWsMain" type="Node" unique_id=487100017]
-script = ExtResource("1_lrl20")
+[node name="WbWsMain" type="Node" unique_id=487100017 groups=["Main"]]
+script = ExtResource("1_3cxpi")

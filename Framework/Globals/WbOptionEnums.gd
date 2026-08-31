@@ -1,9 +1,16 @@
-class_name WbWsHud extends Control
+class_name WbOptionEnums extends Node
+
+enum Language {
+	
+	GERMAN,
+	ENGLISH,
+	
+}
+
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	add_to_group("Hud")
 	pass # Replace with function body.
 
 
