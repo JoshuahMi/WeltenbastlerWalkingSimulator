@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://dtshkux12qx2l"]
 
+[ext_resource type="PackedScene" uid="uid://c7jqij8ppko5t" path="res://Template/Main/MainMenu/UI/WbWsMainMenuUI.tscn" id="1_1sbet"]
+
 [node name="WbWsMainMenu" type="Node2D" unique_id=526626307]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=118003366]
+
+[node name="WbWsMainMenuUi" parent="CanvasLayer" unique_id=129704491 instance=ExtResource("1_1sbet")]

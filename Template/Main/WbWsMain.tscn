@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://c70spfe6h0nb7"]
 
 [ext_resource type="Script" uid="uid://dbeyvfmhskutc" path="res://Template/Main/wb_ws_main.gd" id="1_3cxpi"]
+[ext_resource type="PackedScene" uid="uid://dtshkux12qx2l" path="res://Template/Main/MainMenu/WbWsMainMenu.tscn" id="2_tsyxs"]
 
 [node name="WbWsMain" type="Node" unique_id=487100017 groups=["Main"]]
 script = ExtResource("1_3cxpi")
+main_menu_scene = ExtResource("2_tsyxs")

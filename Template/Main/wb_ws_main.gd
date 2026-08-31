@@ -9,6 +9,9 @@ class_name WbWsMain extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	add_to_group("Main")
+	
+	initiate_main_menu()
+	
 	pass # Replace with function body.
 
 

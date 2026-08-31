@@ -3,6 +3,8 @@ extends Node
 ## A class for being an autoload singleton. this is the single source of truth
 ## for Wb Text, sound and music volume, resolution etc.
 
+## TODO: Will load every option from a resource in "Presentation"
+
 # LANGUAGE
 var language: WbOptionEnums.Language = WbOptionEnums.Language.GERMAN
 
