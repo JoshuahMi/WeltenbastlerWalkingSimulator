@@ -24,6 +24,7 @@ window/stretch/aspect="expand"
 Game=""
 Main=""
 Level=""
+TeleportPoint=""
 
 [physics]
 
