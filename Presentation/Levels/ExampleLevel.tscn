@@ -5,3 +5,7 @@
 [node name="ExampleLevel" type="Node3D" unique_id=2135115398]
 script = ExtResource("1_fqdhf")
 metadata/_custom_type_script = "uid://bppu1gw6eq55r"
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1040682627]
+use_collision = true
+size = Vector3(29.960938, 1, 22.405273)

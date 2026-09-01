@@ -4,3 +4,4 @@ class_name WbWsLevelIdentity extends Resource
 
 @export var adress: String
 @export var level: PackedScene
+@export var default_spawn_point: Vector3

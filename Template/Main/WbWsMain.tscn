@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://dbeyvfmhskutc" path="res://Template/Main/wb_ws_main.gd" id="1_3cxpi"]
 [ext_resource type="PackedScene" uid="uid://dtshkux12qx2l" path="res://Template/Main/MainMenu/WbWsMainMenu.tscn" id="2_tsyxs"]
+[ext_resource type="PackedScene" uid="uid://b2gug48icdjyb" path="res://Template/Main/Game/WbWsGame.tscn" id="3_2k5fj"]
 
 [node name="WbWsMain" type="Node" unique_id=487100017 groups=["Main"]]
 script = ExtResource("1_3cxpi")
 main_menu_scene = ExtResource("2_tsyxs")
+game_scene = ExtResource("3_2k5fj")

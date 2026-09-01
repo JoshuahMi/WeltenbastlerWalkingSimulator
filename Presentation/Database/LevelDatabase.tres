@@ -12,5 +12,6 @@ metadata/_custom_type_script = "uid://bsltab2ufr0wu"
 
 [resource]
 script = ExtResource("1_28wrd")
+start_adress = "Example"
 levels = Array[ExtResource("1_tm3rj")]([SubResource("Resource_24aui")])
 metadata/_custom_type_script = "uid://dr2si0xd8aj1n"

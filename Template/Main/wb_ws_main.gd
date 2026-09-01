@@ -52,8 +52,7 @@ func initiate_game():
 		
 		add_child(game)
 		
-	
-	
+		game.load_starting_level()
 	
 	
 	

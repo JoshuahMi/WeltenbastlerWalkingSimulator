@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://b2gug48icdjyb"]
 
 [ext_resource type="Script" uid="uid://b1nkdhxgc2jib" path="res://Template/Main/Game/wb_ws_game.gd" id="1_hf6ru"]
+[ext_resource type="PackedScene" uid="uid://c57fei1mjkn2y" path="res://Template/Main/Game/Player/WbWsPlayer.tscn" id="2_r6t7t"]
 
 [node name="WbWsGame" type="Node3D" unique_id=1558404010 groups=["Game"]]
 script = ExtResource("1_hf6ru")
+player_scene = ExtResource("2_r6t7t")
