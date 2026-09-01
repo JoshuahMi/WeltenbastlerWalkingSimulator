@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://svklt8jt4653"]
+
+[ext_resource type="Script" uid="uid://bppu1gw6eq55r" path="res://Template/Main/Game/Environment/Level/wb_ws_level.gd" id="1_fqdhf"]
+
+[node name="ExampleLevel" type="Node3D" unique_id=2135115398]
+script = ExtResource("1_fqdhf")
+metadata/_custom_type_script = "uid://bppu1gw6eq55r"

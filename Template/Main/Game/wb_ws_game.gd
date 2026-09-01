@@ -2,6 +2,12 @@ class_name WbWsGame extends Node3D
 
 ## The game class that handles player and level spawning
 
+
+## These are the levels the Designer defined
+var levels: WbWsLevelDatabase = preload("res://Presentation/Database/LevelDatabase.tres")
+
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	add_to_group("Game")

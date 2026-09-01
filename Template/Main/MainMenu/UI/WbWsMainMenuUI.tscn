@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://c7jqij8ppko5t"]
 
+[ext_resource type="Script" uid="uid://cfp6oh1bgpfsf" path="res://Template/Main/MainMenu/UI/wb_ws_start_game_button.gd" id="1_0vvpi"]
 [ext_resource type="Script" uid="uid://dv563stogrnll" path="res://Framework/Types/UI/wb_label.gd" id="1_3tytp"]
 [ext_resource type="Script" uid="uid://ctmc8ampinr3s" path="res://Framework/Types/wb_text.gd" id="2_0vvpi"]
 
 [sub_resource type="Resource" id="Resource_reusg"]
 script = ExtResource("2_0vvpi")
-german = "Hallo Welt!"
-english = "Hello World!"
+german = "Darstellung Starten"
+english = "Start Presentation"
 metadata/_custom_type_script = "uid://ctmc8ampinr3s"
 
 [node name="WbWsMainMenuUi" type="Control" unique_id=129704491]
@@ -17,7 +18,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="WbLabel" type="Label" parent="." unique_id=372755828]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=886044431]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="MarginContainer" unique_id=2144424313]
+layout_mode = 2
+script = ExtResource("1_0vvpi")
+
+[node name="WbLabel" type="Label" parent="MarginContainer/Button" unique_id=372755828]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -30,6 +49,7 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+text = "Blub Blubbedi Blubbedi Blub"
 script = ExtResource("1_3tytp")
 wb_text = SubResource("Resource_reusg")
 metadata/_custom_type_script = "uid://dv563stogrnll"
