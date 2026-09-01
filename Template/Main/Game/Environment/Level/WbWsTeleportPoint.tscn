@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://o52f8pc0t31w" path="res://Template/Main/Game/Environment/Level/wb_ws_teleport_point.gd" id="1_oxj5o"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_reusg"]
+size = Vector3(2.433838, 3.8134766, 1)
 
 [node name="WbWsTeleportPoint" type="Area3D" unique_id=1395161882 groups=["TeleportPoint"]]
 script = ExtResource("1_oxj5o")

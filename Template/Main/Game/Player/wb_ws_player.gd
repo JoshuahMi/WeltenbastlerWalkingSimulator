@@ -1,5 +1,7 @@
 class_name WbWsPlayer extends CharacterBody3D
 
+@onready var camera: Camera3D = $Camera3D
+
 ## The player class
 
 const SPEED = 5.0
@@ -10,6 +12,12 @@ func _ready() -> void:
 	add_to_group("Player")
 	
 	pass
+
+func _unhandled_input(event: InputEvent) -> void:
+	
+	if event is InputEventMouseMotion:
+		rotate_y(-0.01 * event.screen_relative.x) 
+		pass
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -32,3 +40,8 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func look():
+	
+	
+	pass
