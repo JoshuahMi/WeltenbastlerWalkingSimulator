@@ -3,11 +3,19 @@
 [ext_resource type="Script" uid="uid://dr2si0xd8aj1n" path="res://Template/Types/WbWsLevelDatabase.gd" id="1_28wrd"]
 [ext_resource type="Script" uid="uid://bsltab2ufr0wu" path="res://Template/Types/WbWsLevelIdentity.gd" id="1_tm3rj"]
 [ext_resource type="PackedScene" uid="uid://svklt8jt4653" path="res://Presentation/Levels/ExampleLevel.tscn" id="2_keyxa"]
+[ext_resource type="Script" uid="uid://cwo0t51plmxrb" path="res://Template/Types/WbWsSpawnPoint.gd" id="3_siiy1"]
+
+[sub_resource type="Resource" id="Resource_r6t7t"]
+script = ExtResource("3_siiy1")
+adress = "Door"
+point = Transform3D(1, 0, 0.99, 0, 0.155, 0, 0, 0, 1, -2.56, 0, 0)
+metadata/_custom_type_script = "uid://cwo0t51plmxrb"
 
 [sub_resource type="Resource" id="Resource_24aui"]
 script = ExtResource("1_tm3rj")
 adress = "Example"
 level = ExtResource("2_keyxa")
+spawn_points = Array[ExtResource("3_siiy1")]([SubResource("Resource_r6t7t")])
 metadata/_custom_type_script = "uid://bsltab2ufr0wu"
 
 [resource]

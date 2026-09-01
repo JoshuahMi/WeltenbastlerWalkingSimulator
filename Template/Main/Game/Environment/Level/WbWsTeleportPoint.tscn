@@ -2,5 +2,10 @@
 
 [ext_resource type="Script" uid="uid://o52f8pc0t31w" path="res://Template/Main/Game/Environment/Level/wb_ws_teleport_point.gd" id="1_oxj5o"]
 
-[node name="WbWsTeleportPoint" type="Node3D" unique_id=610585597 groups=["TeleportPoint"]]
+[sub_resource type="BoxShape3D" id="BoxShape3D_reusg"]
+
+[node name="WbWsTeleportPoint" type="Area3D" unique_id=1395161882 groups=["TeleportPoint"]]
 script = ExtResource("1_oxj5o")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1768531527]
+shape = SubResource("BoxShape3D_reusg")

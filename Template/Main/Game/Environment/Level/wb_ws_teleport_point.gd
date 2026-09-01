@@ -1,10 +1,10 @@
-class_name WbWsTeleportPoint extends Node3D
+class_name WbWsTeleportPoint extends Area3D
 
 ## A class with an Area3D that will emit a signal to teleport to a specific level
 ## at a specific point when the player enters it
 
-## This signal will be emitted when the player enters the Area3D
-signal teleport 
+@export var level_adress: String = "Außenwelt"
+@export var spawn_point_adress: String = "Schlosstor"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
