@@ -1,13 +1,15 @@
 class_name WbWsPlayer extends CharacterBody3D
+## The player class
 
 @onready var camera: Camera3D = $Camera3D
 
-## The player class
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
 func _ready() -> void:
+	
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
 	add_to_group("Player")
 	
@@ -15,8 +17,14 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	
+	# LOOK
+	
 	if event is InputEventMouseMotion:
 		rotate_y(-0.01 * event.screen_relative.x) 
+		
+		camera.rotate_x(-0.01 * event.screen_relative.y)
+		
+		
 		pass
 
 func _physics_process(delta: float) -> void:
@@ -30,7 +38,7 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_dir := Input.get_vector("MoveLeft", "MoveRight", "MoveForward", "MoveBackwards")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED

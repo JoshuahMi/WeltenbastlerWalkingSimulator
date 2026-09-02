@@ -40,12 +40,22 @@ func load_starting_level():
 	
 ## This function will delete the current level and load and instantiate a new one.
 ## Will also detach the player from the current level and add them as a child to the new one.
-func load_level(adress: String):
+func load_level(adress: String, spawn_point: String = ""):
 	
 	
+	wipe_world()
 	
-	pass
-
+	# Then instantiate the level scene
+	
+	var level_id: WbWsLevelIdentity = levels.get_level_id_by_adress(adress)
+	
+	var level_scene = level_id.level
+	
+	var level = level_scene.instantiate()
+	
+	add_child(level)
+	
+	spawn_player(levels.get_starting_level_id().default_spawn_point)
 
 
 ## Will delete the player and the game world

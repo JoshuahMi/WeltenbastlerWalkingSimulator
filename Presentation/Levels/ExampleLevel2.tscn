@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dbeow8dpj3s3c"]
+
+[ext_resource type="Script" uid="uid://bppu1gw6eq55r" path="res://Template/Main/Game/Environment/Level/wb_ws_level.gd" id="1_crad4"]
+
+[node name="ExampleLevel2" type="Node3D" unique_id=924117408]
+script = ExtResource("1_crad4")
+metadata/_custom_type_script = "uid://bppu1gw6eq55r"
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=982109436]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=548314087]
+size = Vector3(142.03516, 1, 77.04492)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1250603957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.24619, 13.942997, 0)
+size = Vector3(1, 29.425537, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1101600094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.735567, 13.942997, 0)
+size = Vector3(1, 29.425537, 1)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGCombiner3D" unique_id=260542224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.211254, 13.942997, 0)
+size = Vector3(1, 29.425537, 1)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=2036089566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.09943, 13.942997, 0)
+size = Vector3(1, 29.425537, 1)
