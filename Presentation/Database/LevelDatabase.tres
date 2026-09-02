@@ -6,27 +6,36 @@
 [ext_resource type="Script" uid="uid://cwo0t51plmxrb" path="res://Template/Types/WbWsSpawnPoint.gd" id="3_siiy1"]
 [ext_resource type="PackedScene" uid="uid://dbeow8dpj3s3c" path="res://Presentation/Levels/ExampleLevel2.tscn" id="4_d5wdj"]
 
-[sub_resource type="Resource" id="Resource_r6t7t"]
+[sub_resource type="Resource" id="Resource_k22ak"]
 script = ExtResource("3_siiy1")
-adress = "Door"
-point = Transform3D(1, 0, 0.99, 0, 0.155, 0, 0, 0, 1, -2.56, 0, 0)
 metadata/_custom_type_script = "uid://cwo0t51plmxrb"
 
-[sub_resource type="Resource" id="Resource_24aui"]
+[sub_resource type="Resource" id="Resource_crad4"]
 script = ExtResource("1_tm3rj")
-adress = "Example"
 level = ExtResource("2_keyxa")
-spawn_points = Array[ExtResource("3_siiy1")]([SubResource("Resource_r6t7t")])
+spawn_points = Dictionary[String, ExtResource("3_siiy1")]({
+"Door": SubResource("Resource_k22ak")
+})
 metadata/_custom_type_script = "uid://bsltab2ufr0wu"
+
+[sub_resource type="Resource" id="Resource_d5wdj"]
+script = ExtResource("3_siiy1")
+point = Vector3(0, 50, 0)
+metadata/_custom_type_script = "uid://cwo0t51plmxrb"
 
 [sub_resource type="Resource" id="Resource_ka0kk"]
 script = ExtResource("1_tm3rj")
-adress = "Example2"
 level = ExtResource("4_d5wdj")
+spawn_points = Dictionary[String, ExtResource("3_siiy1")]({
+"Test": SubResource("Resource_d5wdj")
+})
 metadata/_custom_type_script = "uid://bsltab2ufr0wu"
 
 [resource]
 script = ExtResource("1_28wrd")
 start_adress = "Example"
-levels = Array[ExtResource("1_tm3rj")]([SubResource("Resource_24aui"), SubResource("Resource_ka0kk")])
+levels = Dictionary[String, ExtResource("1_tm3rj")]({
+"Example": SubResource("Resource_crad4"),
+"Example2": SubResource("Resource_ka0kk")
+})
 metadata/_custom_type_script = "uid://dr2si0xd8aj1n"

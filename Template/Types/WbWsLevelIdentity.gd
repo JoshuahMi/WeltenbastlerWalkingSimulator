@@ -1,17 +1,15 @@
 class_name WbWsLevelIdentity extends Resource
 
-## A class for pairing a level with it's adress
+## A class for pairing a level with its adress
 
-@export var adress: String
+#@export var adress: String
 @export var level: PackedScene
 @export var default_spawn_point: Vector3
 
-@export var spawn_points: Array[WbWsSpawnPoint]
+@export var spawn_points: Dictionary[String, WbWsSpawnPoint]
 
 
-## TODO: Will return a specific spawn point by taking its adress.
-## Will return the identity transform if nothing is found.
-func get_spawn_point_by_adress(adress: String) -> Transform3D:
+## Will return a specific spawn point by taking its adress.
+func get_spawn_point_by_adress(adress: String) -> WbWsSpawnPoint:
 	
-	
-	return Transform3D.IDENTITY
+	return spawn_points.get(adress, WbWsSpawnPoint.new())

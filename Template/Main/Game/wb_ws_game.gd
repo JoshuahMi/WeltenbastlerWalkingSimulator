@@ -29,7 +29,7 @@ func load_starting_level():
 	
 	# Then instantiate the starting level scene
 	
-	var starting_level_scene = levels.get_starting_level()
+	var starting_level_scene = levels.get_starting_level_id().level
 	
 	var starting_level = starting_level_scene.instantiate()
 	
@@ -55,8 +55,13 @@ func load_level(adress: String, spawn_point: String = ""):
 	
 	add_child(level)
 	
-	spawn_player(levels.get_starting_level_id().default_spawn_point)
-
+	if spawn_point != "":
+	
+		spawn_player(level_id.spawn_points.get(spawn_point, WbWsSpawnPoint.new()).point)
+	
+	else:
+		spawn_player(level_id.default_spawn_point)
+		
 
 ## Will delete the player and the game world
 func wipe_world():

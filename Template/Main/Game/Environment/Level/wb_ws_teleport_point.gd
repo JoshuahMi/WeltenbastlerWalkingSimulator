@@ -24,8 +24,5 @@ func _on_body_entered(body):
 	
 	var game: WbWsGame = get_tree().get_first_node_in_group("Game") as WbWsGame
 	
-	game.load_level("Example2")
+	game.load_level(level_adress, spawn_point_adress)
 	
-	# teleport
-	print_debug("Teleported!")
-	pass

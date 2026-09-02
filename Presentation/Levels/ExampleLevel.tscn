@@ -24,4 +24,4 @@ size = Vector3(7.1845703, 5.4196777, 2.1306152)
 [node name="WbWsTeleportPoint" parent="." unique_id=1395161882 instance=ExtResource("2_k22ak")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.250458, 2.7544308, 0.24013281)
 level_adress = "Example2"
-spawn_point_adress = ""
+spawn_point_adress = "Test2"
